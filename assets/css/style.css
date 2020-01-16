@@ -12,8 +12,8 @@ a:hover {
 #pageContainer {
     width: 100%;
     height: 100%;
-    background-color: #282828;
-    color: #fff;
+    background-color: #fff;
+    color: #282828;
 }
 
 #mastHeadContainer {
@@ -129,8 +129,8 @@ a:hover {
 
 .column {
     flex: 1;
-    background-color: #282828;
+    background-color: #ffffff;
     min-height: 300px;
     padding: 20px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px; */
 }
