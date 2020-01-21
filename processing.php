@@ -12,7 +12,7 @@ if(!isset($POST["uploadButton"])) {
 }
 //1) create file upload data
 $videoUploadData = new VideoUploadData(
-                $_POST["fileInput"],
+                $_FILES["fileInput"],
                 $_POST["titleInput"],
                 $_POST["descriptionInput"],
                 $_POST["privacyInput"],

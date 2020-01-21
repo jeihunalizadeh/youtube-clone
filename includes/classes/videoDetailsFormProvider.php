@@ -15,7 +15,7 @@ class VideoDetailsFormProvider {
         $privacyInput = $this->createPrivacyInput();
         $createCategoriesInput = $this->createCategoriesInput();
         $createUploadButton = $this->createUploadButton();
-        return "<form action='processing.php' method='POST'>
+        return "<form action='processing.php' method='POST' enctype='multipart/form-data'>
             $fileInput
             $titleInput
             $descriptionInput
@@ -36,7 +36,7 @@ class VideoDetailsFormProvider {
         <label for='titleInput'>Insert a title</label>
         <input class='form-control bg-dark text-white' type='text'  placeholder='Title' name='titleInput' id='titleInput' required>
         </div>";
-    }
+    }  
     private function createDescriptionInput(){
         return "<div class='form-group'>
         <label for='descriptionInput'>Insert description</label>
