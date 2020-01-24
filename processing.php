@@ -1,12 +1,12 @@
 <?php 
 require_once("includes/header.php");
 require_once("includes/classes/videoUploadData.php");
-require_once("includes/classses/videoProcessor.php");
+require_once("includes/classes/videoProcessor.php");
 ?>
 
 <?php
 
-if(!isset($POST["uploadButton"])) {
+if(!isset($_POST["uploadButton"])) {
     echo "No file sent to page.";
     exit();
 }
@@ -25,3 +25,4 @@ $wasSuccesful = $videoProcessor->upload($videoUploadData);
 
 
 //3) check if upload succesfull
+?>
